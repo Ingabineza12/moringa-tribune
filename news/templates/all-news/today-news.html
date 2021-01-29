@@ -1,0 +1,52 @@
+{%extends 'all-news/base.html'%}
+{% load bootstrap3 %}
+{% load static%}
+{% block content %}
+{{ block.super}}
+
+<div class="container">
+
+    <!-- Looping through news   -->
+    {% for news_item in news %}
+
+    <div class="row">
+        <!-- displaying News articles -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 style="font-weight: bold;"> {{ news_item.title }} </h2>
+            <ul>{{ news_item.post | safe }}</ul>
+        </div>
+
+        <!--Display news Article images  -->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="{{news_item.article_image.url}}" class="img-responsive" alt="Image" style="width: 300px;">
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    {% empty %}
+    <div class="row">
+        <h2 class="text-center">There No News Items</h2>
+    </div>
+    {% endfor %}
+
+    <br> <br>
+
+<!-- Looping through news end   -->
+<div class="container-fluid">
+
+  <form  action="{%url 'newsToday'%}" method="post">
+    {%csrf_token%}
+
+    {% bootstrap_form letterForm layout='inline' %}
+    <input type="submit" value="Subscribe">
+  </form>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %} {{block.super}}
+  <script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>
+{% endblock %}

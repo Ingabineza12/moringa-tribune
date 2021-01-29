@@ -1,0 +1,7 @@
+ id |                                   password                                    |          last_login           | is_superuser |   username   | first_name | last_name |        email         | is_staff | is_active |          date_joined          
+----+-------------------------------------------------------------------------------+-------------------------------+--------------+--------------+------------+-----------+----------------------+----------+-----------+-------------------------------
+  2 | pbkdf2_sha256$36000$0OTRWwfOkGgY$ogNQ+bK5vQZe2g0pzV7L28ygsL8ZPpuVbenn5fWiNnQ= | 2021-01-04 18:24:41.748004+02 | f            | ingabineza12 |            |           | ingabineza@gmail.com | f        | t         | 2021-01-04 18:24:41.309404+02
+  1 | pbkdf2_sha256$36000$vRcSZYS01BXc$JFBGiNRGCEhEAp8ku6LgOBTixrNw5Pdv3FErZLNKhjc= | 2021-01-04 23:43:02.837077+02 | t            | deborah      |            |           | ingabineza@gmail.com | t        | t         | 2020-12-22 11:34:59.545884+02
+  3 | pbkdf2_sha256$36000$8YTMoapk1Lyq$5KqKPVkbGMSImhuBV8LE95z7yblbX7/oOx/LC5kiMNI= | 2021-01-14 17:19:58.268727+02 | f            | Deborah      |            |           | ingabineza@gmail.com | f        | t         | 2021-01-14 16:28:57.128702+02
+(3 rows)
+
