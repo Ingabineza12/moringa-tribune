@@ -1,12 +1,10 @@
 from django.test import TestCase
-
-# Create your tests here.
-from django.test import TestCase
-
-# Create your tests here.
 from django.test import TestCase
 from .models import Project,User,Profile,Comment
 import datetime as dt
+
+# Create your tests here.
+
 
 class ImageTestClass(TestCase):
     '''
